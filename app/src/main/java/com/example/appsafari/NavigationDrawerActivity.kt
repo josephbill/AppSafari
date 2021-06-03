@@ -51,6 +51,15 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
             R.id.nav_linear -> {
                 Toast.makeText(applicationContext,"Linear clicked",Toast.LENGTH_LONG).show()
             }
+
+            R.id.nav_relative -> {
+                val intentBottom = Intent(this@NavigationDrawerActivity,BottomNavActivity::class.java)
+                startActivity(intentBottom)
+            }
+            R.id.nav_recycle -> {
+                val intentRecyle = Intent(this@NavigationDrawerActivity,RecyelerviewActivity::class.java)
+                startActivity(intentRecyle)
+            }
         }
         return true
     }

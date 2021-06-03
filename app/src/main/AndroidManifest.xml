@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppSafari">
+        <activity android:name=".RecyelerviewActivity"></activity>
+        <activity android:name=".BottomNavActivity" />
         <activity android:name=".NavigationDrawerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +21,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".RelativeLayout" />
-        <activity android:name=".LinearLayoutActivity">
-
-        </activity>
+        <activity android:name=".LinearLayoutActivity" />
     </application>
 
 </manifest>
