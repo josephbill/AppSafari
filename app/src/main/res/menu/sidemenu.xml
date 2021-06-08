@@ -36,4 +36,11 @@
         />
 
 
+    <item
+        android:id="@+id/nav_intentsharing"
+        android:title="Intent Sharing"
+        android:icon="@drawable/ic_baseline_ac_unit_24"
+        />
+
+
 </menu>

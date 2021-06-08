@@ -60,6 +60,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intentRecyle = Intent(this@NavigationDrawerActivity,RecyelerviewActivity::class.java)
                 startActivity(intentRecyle)
             }
+            R.id.nav_intentsharing -> {
+                val intentRecyle = Intent(this@NavigationDrawerActivity,IntentSharingActivity::class.java)
+                startActivity(intentRecyle)
+            }
         }
         return true
     }
