@@ -64,6 +64,22 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intentRecyle = Intent(this@NavigationDrawerActivity,IntentSharingActivity::class.java)
                 startActivity(intentRecyle)
             }
+            R.id.nav_frags -> {
+                val intentRecyle = Intent(this@NavigationDrawerActivity,FragmentClass::class.java)
+                startActivity(intentRecyle)
+            }
+            R.id.nav_back -> {
+                val intback = Intent(this@NavigationDrawerActivity,BackgroundLogic::class.java)
+                startActivity(intback)
+            }
+            R.id.nav_frag_interface -> {
+                val intback = Intent(this@NavigationDrawerActivity,FragmentClass::class.java)
+                startActivity(intback)
+            }
+            R.id.nav_frag_model -> {
+                val intback = Intent(this@NavigationDrawerActivity,FragmentViewModel::class.java)
+                startActivity(intback)
+            }
         }
         return true
     }

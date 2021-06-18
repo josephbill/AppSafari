@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppSafari">
-        <activity android:name=".IntentSharingActivityB"></activity>
+        <activity android:name=".FragmentViewModel"></activity>
+        <activity android:name=".BackgroundLogic" />
+        <activity android:name=".FragmentClass" />
+        <activity android:name=".IntentSharingActivityB" />
         <activity android:name=".IntentSharingActivity" />
         <activity android:name=".RecyelerviewActivity" />
         <activity android:name=".BottomNavActivity" />

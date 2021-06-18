@@ -42,5 +42,24 @@
         android:icon="@drawable/ic_baseline_ac_unit_24"
         />
 
-
+    <item
+        android:id="@+id/nav_frags"
+        android:title="Fragments"
+        android:icon="@drawable/ic_baseline_ac_unit_24"
+        />
+    <item
+        android:id="@+id/nav_back"
+        android:title="BackGroundLogic"
+        android:icon="@drawable/ic_baseline_ac_unit_24"
+        />
+    <item
+        android:id="@+id/nav_frag_interface"
+        android:title="Frag Interface"
+        android:icon="@drawable/ic_baseline_ac_unit_24"
+        />
+    <item
+        android:id="@+id/nav_frag_model"
+        android:title="Frag Model"
+        android:icon="@drawable/ic_baseline_ac_unit_24"
+        />
 </menu>
