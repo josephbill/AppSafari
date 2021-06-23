@@ -80,6 +80,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intback = Intent(this@NavigationDrawerActivity,FragmentViewModel::class.java)
                 startActivity(intback)
             }
+            R.id.nav_sql -> {
+                val intback = Intent(this@NavigationDrawerActivity,SqliteActivity::class.java)
+                startActivity(intback)
+            }
         }
         return true
     }

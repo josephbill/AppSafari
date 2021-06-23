@@ -62,4 +62,10 @@
         android:title="Frag Model"
         android:icon="@drawable/ic_baseline_ac_unit_24"
         />
+    <item
+        android:id="@+id/nav_sql"
+        android:title="SQLite Activity"
+        android:icon="@drawable/ic_baseline_ac_unit_24"
+        />
+
 </menu>
