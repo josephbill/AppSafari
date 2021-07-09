@@ -6,6 +6,7 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteException
 import android.database.sqlite.SQLiteOpenHelper
+import java.util.*
 
 
 class DatabaseHelper(context: Context) : SQLiteOpenHelper(context,DATABASE_NAME,null,
@@ -72,7 +73,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context,DATABASE_NAME,
             db.execSQL(selectQuery)
             return ArrayList()
         }
-        //iterate over records in db and store them in model class
+        //iterate using cursor over records in db and store them in model class
         var userId: Int
         var userName: String
         var userEmail: String
@@ -90,6 +91,39 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context,DATABASE_NAME,
             } while (cursor.moveToNext())
         }
         return userArray
+    }
+
+    //update method
+    fun updateData(sqliteModel: SqiliteModel) : Int{
+        //process for sqlite database
+        val db = this.writableDatabase
+        //content values
+        val contentValues = ContentValues()
+        //put details inside the respective columns
+        contentValues.put(KEY_ID, sqliteModel.userId)
+        contentValues.put(KEY_NAME, sqliteModel.userName)
+        contentValues.put(KEY_EMAIL, sqliteModel.userEmail)
+        //query to update the row
+        val success  = db.update(TABLE_USERS,contentValues
+                       ,"id=" + sqliteModel.userId,null)
+        //close the connection
+        db.close()
+        //return the id
+         return success
+
+    }
+
+    fun deleteData(sqliteModel: SqiliteModel) : Int{
+        //process for sqlite
+        val db = this.writableDatabase
+        //content values
+        val contentValues = ContentValues()
+        contentValues.put(KEY_ID, sqliteModel.userId)
+        //delete process
+    val success = db.delete(TABLE_USERS,
+                    "id=" + sqliteModel.userId,null)
+        db.close()
+        return success
     }
 
 

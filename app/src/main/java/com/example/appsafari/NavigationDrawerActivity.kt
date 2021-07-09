@@ -84,6 +84,18 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intback = Intent(this@NavigationDrawerActivity,SqliteActivity::class.java)
                 startActivity(intback)
             }
+            R.id.nav_sharedPrefs -> {
+                val intsharedPrefs = Intent(this@NavigationDrawerActivity,SharedPreferenceActivity::class.java)
+                startActivity(intsharedPrefs)
+            }
+            R.id.nav_networking -> {
+                val intsharedPrefs = Intent(this@NavigationDrawerActivity,AndroidNetworking::class.java)
+                startActivity(intsharedPrefs)
+            }
+            R.id.nav_postUpdateDelete -> {
+                val intentPost = Intent(this@NavigationDrawerActivity,PostUpdateDelete::class.java)
+                startActivity(intentPost)
+            }
         }
         return true
     }
