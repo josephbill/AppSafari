@@ -96,6 +96,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intentPost = Intent(this@NavigationDrawerActivity,PostUpdateDelete::class.java)
                 startActivity(intentPost)
             }
+            R.id.nav_maps -> {
+                val intentMaps = Intent(this@NavigationDrawerActivity,MainActivity2::class.java)
+                startActivity(intentMaps)
+            }
         }
         return true
     }
