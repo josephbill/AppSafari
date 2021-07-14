@@ -83,9 +83,14 @@
         android:icon="@drawable/ic_baseline_ac_unit_24"
         />
     <item
-        android:id="@+id/nav_maps"
-        android:title="Maps Activity"
+        android:id="@+id/nav_user_location"
+        android:title="Current Location"
         android:icon="@drawable/ic_baseline_ac_unit_24"
         />
+    <item
+        android:icon="@drawable/ic_baseline_ac_unit_24"
+        android:title="Maps Activity"
+        android:id="@+id/nav_maps"
+     />
 
 </menu>

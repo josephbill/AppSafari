@@ -97,8 +97,12 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 startActivity(intentPost)
             }
             R.id.nav_maps -> {
-                val intentMaps = Intent(this@NavigationDrawerActivity,MainActivity2::class.java)
+                val intentMaps = Intent(this@NavigationDrawerActivity,MapsActivity2::class.java)
                 startActivity(intentMaps)
+            }
+            R.id.nav_user_location -> {
+                val intentUserLoc = Intent(this@NavigationDrawerActivity,MainActivity2::class.java)
+                startActivity(intentUserLoc)
             }
         }
         return true
